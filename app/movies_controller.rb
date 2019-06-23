@@ -74,7 +74,7 @@ def can_be_found_updated_and_saved
  #binding.pry
   movie.update(:title => "Even Awesomer Flick")
   movie.save
-  binding.pry
+  #binding.pry
   movie
   
 end
