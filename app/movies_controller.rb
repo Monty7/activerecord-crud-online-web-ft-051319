@@ -90,9 +90,12 @@ end
 def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
   5.times do |i|
-    Movie.create(title: "Movie_#{i}", release_date: 2000+i)
+   Movie.create(title: "Movie_#{i}", release_date: 2000+i)
   end
-  __
+  5.times do
+    Movie.update(title: "A Movie")
+  end
+
 end
 
 def can_destroy_a_single_item
