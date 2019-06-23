@@ -110,6 +110,6 @@ def can_destroy_all_items_at_once
  
   end
     movies.each do |movie|
-      movie.delete(title: "Movie_#{i}")
+      movie.delete
   end
 end
