@@ -95,7 +95,6 @@ def can_update_multiple_items_at_once
   5.times do
     Movie.update(title: "A Movie")
   end
-
 end
 
 def can_destroy_a_single_item
